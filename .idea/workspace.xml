@@ -2,10 +2,79 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a24e4da-afdd-44c7-9cc9-e4bb9402bc72" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/renaming_assets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image_cropping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Element_Rumble.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Element_Rumble.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_1/attack_1_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_1/attack_1_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_1/attack_1_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_1/attack_1_10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_1/attack_1_11.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_1/attack_1_11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_1/attack_1_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_1/attack_1_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_1/attack_1_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_1/attack_1_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_1/attack_1_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_1/attack_1_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_1/attack_1_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_1/attack_1_5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_1/attack_1_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_1/attack_1_6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_1/attack_1_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_1/attack_1_7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_1/attack_1_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_1/attack_1_8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_1/attack_1_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_1/attack_1_9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_11.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_12.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_13.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_13.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_14.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_14.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_15.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_15.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_16.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_17.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_17.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_18.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_18.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_19.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_19.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_2/attack_2_9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_3/attack_3_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_3/attack_3_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_3/attack_3_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_3/attack_3_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_3/attack_3_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_3/attack_3_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_3/attack_3_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_3/attack_3_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_3/attack_3_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_3/attack_3_5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_3/attack_3_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_3/attack_3_6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_3/attack_3_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_3/attack_3_7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_3/attack_3_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_3/attack_3_8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_3/attack_3_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/attack_3/attack_3_9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/death/death_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/death/death_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/death/death_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/death/death_10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/death/death_11.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/death/death_11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/death/death_12.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/death/death_12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/death/death_13.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/death/death_13.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/death/death_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/death/death_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/death/death_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/death/death_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/death/death_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/death/death_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/death/death_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/death/death_5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/death/death_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/death/death_6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/death/death_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/death/death_7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/death/death_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/death/death_8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/death/death_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/death/death_9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/idle/idle_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/idle/idle_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/idle/idle_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/idle/idle_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/idle/idle_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/idle/idle_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/idle/idle_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/idle/idle_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/idle/idle_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/idle/idle_5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/idle/idle_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/idle/idle_6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/idle/idle_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/idle/idle_7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/idle/idle_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/idle/idle_8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/run/run_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/run/run_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/run/run_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/run/run_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/run/run_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/run/run_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/run/run_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/run/run_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/run/run_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/run/run_5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/run/run_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/run/run_6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/run/run_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/run/run_7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/run/run_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/Elementals_fire_knight_FREE_v1.1/png/fire_knight/run/run_8.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/player.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tile.py" beforeDir="false" afterPath="$PROJECT_DIR$/tile.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +111,27 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.main">
+    <configuration name="image_cropping" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Element_Rumble" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Program Files (x86)\Python38-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/image_cropping.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Element_Rumble" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -49,9 +139,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Program Files (x86)\Python38-32\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
@@ -84,9 +174,15 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.renaming_assets" />
+      <item itemvalue="Python.image_cropping" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.image_cropping" />
         <item itemvalue="Python.renaming_assets" />
       </list>
     </recent_temporary>

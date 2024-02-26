@@ -36,6 +36,9 @@ class Player(pygame.sprite.Sprite):
 
     # def get_status(self):
     #
+    #     if self.direction.x == 1 or self.direction.y == 1:  # moving right or
+    #         self.status = "run"
+    #     elif self.direction.x == -1 or self.direction.y == -1:
     #     if self.direction.x == 0 and self.direction.y == 0:
     #         self.status = "idle"
     #
@@ -74,8 +77,8 @@ class Player(pygame.sprite.Sprite):
             self.attack_time = pygame.time.get_ticks()
             self.status = "special"
 
-        # if not self.attacking and self.direction.x == 0 and self.direction.y == 0:
-        #     self.status = "idle"
+        if not self.attacking and self.direction.x == 0 and self.direction.y == 0:
+            self.status = "idle"
 
     def cooldown(self):  # checks the cooldowns in the game and applies them if necessary
         current_time = pygame.time.get_ticks()
@@ -114,15 +117,17 @@ class Player(pygame.sprite.Sprite):
         animation = self.animations[self.status]
         self.frame_index = self.frame_index + self.animation_speed
         if self.frame_index > len(animation):
-            self.status = "idle"
             self.frame_index = 0
-        print(self.status)
+            if self.status == "attack_1" or self.status == "special":
+                self.attacking = False
+                self.status = "idle"
+        print(f"status: {self.status}, frame: {self.frame_index}")
 
         self.image = animation[int(self.frame_index)]
-        self.rect = self.image.get_rect(center = self.hitbox.center)
+        self.rect = self.image.get_rect(topright = self.hitbox.topright)
+        print(f"bottomleft: {self.image.get_rect().bottomleft}")
 
     def update(self):
         self.get_input()
-        self.cooldown()
         self.animate()
         self.move()
