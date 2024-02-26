@@ -2,59 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a24e4da-afdd-44c7-9cc9-e4bb9402bc72" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/renaming_assets.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/COUPON.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/COUPON.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/Attack_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/Attack_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/Charge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/Dead.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/Fireball.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/Flame_jet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/Hurt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/Idle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/Jump.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/Run.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/Walk.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/walk/walk_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/walk/walk_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/walk/walk_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/walk/walk_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/walk/walk_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/walk/walk_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Font.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Licens.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Lightning Mage/Attack_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Lightning Mage/Attack_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Lightning Mage/Charge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Lightning Mage/Dead.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Lightning Mage/Hurt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Lightning Mage/Idle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Lightning Mage/Jump.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Lightning Mage/Light_ball.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Lightning Mage/Light_charge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Lightning Mage/Run.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Lightning Mage/Walk.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/PSD/Fire_Mage_Spritelist.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/PSD/Light_Mage_Spritelist.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/PSD/Wanderer_Magican_Spritelist.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Attack_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Attack_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Charge_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Charge_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Dead.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Hurt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Idle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Jump.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Magic_arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Magic_sphere.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Run.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Walk.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hisoka.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/level.py" beforeDir="false" afterPath="$PROJECT_DIR$/level.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/naruto.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/player.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tile.py" beforeDir="false" afterPath="$PROJECT_DIR$/tile.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -91,7 +41,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Element_Rumble" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -113,9 +63,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="renaming_assets" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Element_Rumble" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/renaming_assets.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.renaming_assets" />
       </list>
     </recent_temporary>
   </component>
