@@ -16,6 +16,6 @@ def crop_image(image_path):
     # Save the cropped image (optional)
     cropped_image.save(image_path)
 
-dir = r"C:\Users\roeym\PycharmProjects\Element_Rumble\Elementals_fire_knight_FREE_v1.1\png\fire_knight\air_attack"
+dir = r".\Elementals_fire_knight_FREE_v1.1\png\fire_knight\air_attack"
 for image_name in os.listdir(dir):
     crop_image(os.path.join(dir, image_name))

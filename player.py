@@ -5,7 +5,7 @@ import os
 class Player(pygame.sprite.Sprite):
     def __init__(self, pos, groups, obstacle_sprites):
         super().__init__(groups)
-        self.image = pygame.image.load(r".\Elementals_fire_knight_FREE_v1.1\png\fire_knight\idle\idle_1.png").convert_alpha()
+        self.image = pygame.image.load(r".\Elementals_fire_knight_FREE_v1.1\png\fire_knight\right_idle\right_idle_1.png").convert_alpha()
         self.rect = self.image.get_rect(topleft = pos)
         self.direction = pygame.math.Vector2()
         self.speed = 5
@@ -18,11 +18,14 @@ class Player(pygame.sprite.Sprite):
         self.obstacle_sprites = obstacle_sprites
 
         # animation attributes
-        self.animations = {"idle": [], "run": [], "jump": [], "jump_down": [], "jump_up": [], "roll": [], "attack_1": [],
-                      "attack_2": [], "attack_3": [], "special": [], "defend": [], "take_hit": [], "death": [],
-                      "air_attack": []}
+        self.animations = {'right_idle': [], 'left_idle': [], 'right': [], 'left': [], 'right_jump': [], 'left_jump': [],
+        'right_jump_down': [], 'left_jump_down': [], 'right_jump_up': [], 'left_jump_up': [], 'right_roll': [],
+        'left_roll': [], 'right_attack_1': [], 'left_attack_1': [], 'right_attack_2': [], 'left_attack_2': [],
+        'right_attack_3': [], 'left_attack_3': [], 'right_special': [], 'left_special': [], 'right_defend': [],
+        'left_defend': [], 'right_take_hit': [], 'left_take_hit': [], 'right_death': [], 'left_death': [],
+        'right_air_attack': [], 'left_air_attack': []}
         self.import_player_assets()
-        self.status = "idle"    # the status of the player (the animation that is presented)
+        self.status = "right_idle"    # the status of the player (the animation that is presented)
         self.frame_index = 0
         self.animation_speed = 0.15
 
@@ -54,31 +57,43 @@ class Player(pygame.sprite.Sprite):
         keys = pygame.key.get_pressed()
         if keys[pygame.K_UP] or keys[pygame.K_w]:
             self.direction.y = -1
-            self.status = "run"
+            self.status = self.status.split("_")[0]
         elif keys[pygame.K_DOWN] or keys[pygame.K_s]:
             self.direction.y = 1
+            self.status = self.status.split("_")[0]
         else:
             self.direction.y = 0
         if keys[pygame.K_RIGHT] or keys[pygame.K_d]:
             self.direction.x = 1
-            self.status = "run"
+            self.status = "right"
         elif keys[pygame.K_LEFT] or keys[pygame.K_a]:
             self.direction.x = -1
+            self.status = "left"
         else:
             self.direction.x = 0
 
         if keys[pygame.K_k] and not self.attacking:
             self.attacking = True
             self.attack_time = pygame.time.get_ticks()
-            self.status = "attack_1"
+            if "_attack_1" not in self.status:
+                if "idle" in self.status:
+                    self.status = self.status.replace("idle", "attack_1")
+                else:
+                    self.status += "_attack_1"
 
         if keys[pygame.K_p] and not self.attacking:
             self.attacking = True
             self.attack_time = pygame.time.get_ticks()
-            self.status = "special"
+            if "_special" not in self.status:
+                if "idle" in self.status:
+                    self.status = self.status.replace("idle", "special")
+                else:
+                    self.status += "_special"
 
         if not self.attacking and self.direction.x == 0 and self.direction.y == 0:
-            self.status = "idle"
+            if "_attack_1" not in self.status and "_special" not in self.status and "_idle" not in self.status:
+                self.status += "_idle"
+
 
     def cooldown(self):  # checks the cooldowns in the game and applies them if necessary
         current_time = pygame.time.get_ticks()
@@ -86,7 +101,8 @@ class Player(pygame.sprite.Sprite):
         if self.attacking:
             if current_time - self.attack_time >= self.attack_cooldown:
                 self.attacking = False
-                self.status = "idle"
+                if "_idle" not in self.status:
+                    self.status += "_idle"
 
     def move(self):
         if self.direction.magnitude() != 0:
