@@ -8,7 +8,7 @@ class Player(pygame.sprite.Sprite):
         self.image = pygame.image.load(r".\Elementals_fire_knight_FREE_v1.1\png\fire_knight\right_idle\right_idle_1.png").convert_alpha()
         self.rect = self.image.get_rect(topleft = pos)
         self.direction = pygame.math.Vector2()
-        self.speed = 5
+        self.speed = 10
 
         self.attacking = False
         self.attack_cooldown = 400

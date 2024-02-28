@@ -15,6 +15,10 @@ class Level:
         self.player = Player((64*5, 64*5), [self.visible_sprites], self.obstacles_sprites)
         ground_layout = import_csv_layout(r".\map\layers\map._ground.csv")
         self.terrain_sprites = self.create_tile_group(ground_layout, "ground")
+        props_layout = import_csv_layout(r".\map\layers\map._props.csv")
+        self.create_tile_group(props_layout, "prop")
+        trees_layout = import_csv_layout(r".\map\layers\map._entities.csv")
+        self.create_tile_group(trees_layout, "tree")
 
     def create_tile_group(self, layout, type):
         sprite_group = pygame.sprite.Group()
@@ -23,12 +27,17 @@ class Level:
 
         for row_index, row in enumerate(layout):
             for col_index, tile_id in enumerate(row):
-                if id != "-1":
+                if tile_id != "-1":
                     x = col_index * TILE_SIZE
                     y = row_index * TILE_SIZE
 
                     if type == "ground":    # the ground layer
                         sprite_group.add(Tile((x, y), [self.visible_sprites], surface=ground_surfaces_list[int(tile_id)]))
+                    elif type == "prop":
+                        sprite_group.add(Tile((x, y), [self.visible_sprites, self.obstacles_sprites], surface=pygame.image.load(PROPS_IMAGES[tile_id])))
+                    elif type == "tree":
+                        sprite_group.add(Tile((x, y), [self.visible_sprites], surface=pygame.image.load(TREES_IMAGES[tile_id])))
+
         return sprite_group
 
     def create_map(self):   # creates the game objects according to the map
