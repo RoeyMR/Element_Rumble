@@ -27,7 +27,7 @@ class Player(pygame.sprite.Sprite):
         self.import_player_assets()
         self.status = "right_idle"    # the status of the player (the animation that is presented)
         self.frame_index = 0
-        self.animation_speed = 0.15
+        self.animation_speed = 0.3
 
     def import_player_assets(self):
         assets_path = r".\Elementals_fire_knight_FREE_v1.1\png\fire_knight"
@@ -81,6 +81,26 @@ class Player(pygame.sprite.Sprite):
                 else:
                     self.status += "_attack_1"
 
+        if keys[pygame.K_j] and not self.attacking:
+            self.attacking = True
+            self.attack_time = pygame.time.get_ticks()
+            if "_attack_2" not in self.status:
+                if "idle" in self.status:
+                    self.status = self.status.replace("idle", "attack_2")
+                else:
+                    self.status += "_attack_2"
+
+        if keys[pygame.K_i] and not self.attacking:
+            self.attacking = True
+            self.attack_time = pygame.time.get_ticks()
+            if "_attack_3" not in self.status:
+                if "idle" in self.status:
+                    self.status = self.status.replace("idle", "attack_3")
+                else:
+                    self.status += "_attack_3"
+
+
+
         if keys[pygame.K_p] and not self.attacking:
             self.attacking = True
             self.attack_time = pygame.time.get_ticks()
@@ -89,6 +109,7 @@ class Player(pygame.sprite.Sprite):
                     self.status = self.status.replace("idle", "special")
                 else:
                     self.status += "_special"
+
 
         if not self.attacking and self.direction.x == 0 and self.direction.y == 0:
             if "_attack_1" not in self.status and "_special" not in self.status and "_idle" not in self.status:
@@ -134,14 +155,14 @@ class Player(pygame.sprite.Sprite):
         self.frame_index = self.frame_index + self.animation_speed
         if self.frame_index > len(animation):
             self.frame_index = 0
-            if self.status == "attack_1" or self.status == "special":
+            if self.attacking:
                 self.attacking = False
-                self.status = "idle"
+                self.status = self.status.split("_")[0] + "_idle"
         print(f"status: {self.status}, frame: {self.frame_index}")
 
         self.image = animation[int(self.frame_index)]
-        self.rect = self.image.get_rect(topright = self.hitbox.topright)
-        print(f"bottomleft: {self.image.get_rect().bottomleft}")
+        self.rect = self.image.get_rect(bottomleft = self.hitbox.bottomleft)
+        print(f"center: {self.rect.center}")
 
     def update(self):
         self.get_input()
