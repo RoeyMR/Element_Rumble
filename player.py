@@ -53,24 +53,25 @@ class Player(pygame.sprite.Sprite):
 
     def get_input(self):
 
-        # movement input
         keys = pygame.key.get_pressed()
-        if keys[pygame.K_UP] or keys[pygame.K_w]:
-            self.direction.y = -1
-            self.status = self.status.split("_")[0]
-        elif keys[pygame.K_DOWN] or keys[pygame.K_s]:
-            self.direction.y = 1
-            self.status = self.status.split("_")[0]
-        else:
-            self.direction.y = 0
-        if keys[pygame.K_RIGHT] or keys[pygame.K_d]:
-            self.direction.x = 1
-            self.status = "right"
-        elif keys[pygame.K_LEFT] or keys[pygame.K_a]:
-            self.direction.x = -1
-            self.status = "left"
-        else:
-            self.direction.x = 0
+        if not self.attacking:
+            # movement input
+            if keys[pygame.K_UP] or keys[pygame.K_w]:
+                self.direction.y = -1
+                self.status = self.status.split("_")[0]
+            elif keys[pygame.K_DOWN] or keys[pygame.K_s]:
+                self.direction.y = 1
+                self.status = self.status.split("_")[0]
+            else:
+                self.direction.y = 0
+            if keys[pygame.K_RIGHT] or keys[pygame.K_d]:
+                self.direction.x = 1
+                self.status = "right"
+            elif keys[pygame.K_LEFT] or keys[pygame.K_a]:
+                self.direction.x = -1
+                self.status = "left"
+            else:
+                self.direction.x = 0
 
         if keys[pygame.K_k] and not self.attacking:
             self.attacking = True
@@ -99,8 +100,6 @@ class Player(pygame.sprite.Sprite):
                 else:
                     self.status += "_attack_3"
 
-
-
         if keys[pygame.K_p] and not self.attacking:
             self.attacking = True
             self.attack_time = pygame.time.get_ticks()
@@ -109,7 +108,6 @@ class Player(pygame.sprite.Sprite):
                     self.status = self.status.replace("idle", "special")
                 else:
                     self.status += "_special"
-
 
         if not self.attacking and self.direction.x == 0 and self.direction.y == 0:
             if "_attack_1" not in self.status and "_special" not in self.status and "_idle" not in self.status:
