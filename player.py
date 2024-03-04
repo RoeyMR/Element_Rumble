@@ -1,11 +1,13 @@
 import pygame
 import os
+from settings import *
 
 
 class Player(pygame.sprite.Sprite):
     def __init__(self, pos, groups, obstacle_sprites):
         super().__init__(groups)
         self.image = pygame.image.load(r".\Elementals_fire_knight_FREE_v1.1\png\fire_knight\right_idle\right_idle_1.png").convert_alpha()
+        self.image = pygame.transform.scale_by(self.image, (PLAYER_SPRITE_SCALE, PLAYER_SPRITE_SCALE))
         self.rect = self.image.get_rect(topleft = pos)
         self.direction = pygame.math.Vector2()
         self.speed = 10
@@ -35,8 +37,9 @@ class Player(pygame.sprite.Sprite):
         for animation in self.animations.keys():
             folder_name = os.path.join(assets_path, animation)
             for filename in os.listdir(folder_name):
-                self.animations[animation].append(pygame.image.load(os.path.join(folder_name, filename)).convert_alpha())
-
+                self.animations[animation].append(
+                    pygame.transform.scale_by(pygame.image.load(os.path.join(folder_name, filename)).convert_alpha(),
+                                              (PLAYER_SPRITE_SCALE, PLAYER_SPRITE_SCALE)))
     # def get_status(self):
     #
     #     if self.direction.x == 1 or self.direction.y == 1:  # moving right or
