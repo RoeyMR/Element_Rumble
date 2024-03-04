@@ -62,18 +62,37 @@ class CameraGroup(pygame.sprite.Group):
         self.half_width = self.display_surface.get_size()[0] // 2
         self.half_height = self.display_surface.get_size()[1] // 2
         self.offset = pygame.math.Vector2()
+        self.camera_borders = {"left": 400, "right": 400, "top": 200, "bottom": 200}
+        width = self.display_surface.get_size()[0] - (self.camera_borders["left"] + self.camera_borders["right"])
+        height = self.display_surface.get_size()[1] - (self.camera_borders["top"] + self.camera_borders["bottom"])
+        self.camera_rect = pygame.Rect(self.camera_borders["left"], self.camera_borders["top"],
+                                       width, height)
 
         # self.floor_surface = pygame.image.load(r".\tile assets\floor_tile.png").convert()
         # self.floor_rect = self.floor_surface.get_rect(topleft=(0, 0))
         #
+    def update_camera_rect(self, target):  # moves the rect of the camera if the player goes out of it
+        if target.rect.left < self.camera_rect.left:
+            self.camera_rect.left = target.rect.left
+
+        if target.rect.right > self.camera_rect.right:
+            self.camera_rect.right = target.rect.right
+
+        if target.rect.top < self.camera_rect.top:
+            self.camera_rect.top = target.rect.top
+
+        if target.rect.bottom > self.camera_rect.bottom:
+            self.camera_rect.bottom = target.rect.bottom
+
+        self.offset.x = self.camera_rect.left - self.camera_borders["left"]
+        self.offset.y = self.camera_rect.top - self.camera_borders["top"]
 
 
     def draw_from_camera_angle(self, player, terrain_sprites):
         """ draws the scene from the angle of the camera, draws the upper objects first
         
         """
-        self.offset.x = player.rect.centerx - self.half_width
-        self.offset.y = player.rect.centery - self.half_height
+        self.update_camera_rect(player)
 
         for sprite in sorted(terrain_sprites, key=lambda sprite: sprite.rect.centery):
             offset_pos = sprite.rect.topleft - self.offset
