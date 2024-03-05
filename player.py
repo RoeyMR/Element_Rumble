@@ -159,11 +159,9 @@ class Player(pygame.sprite.Sprite):
             if self.attacking:
                 self.attacking = False
                 self.status = self.status.split("_")[0] + "_idle"
-        print(f"status: {self.status}, frame: {self.frame_index}")
 
         self.image = animation[int(self.frame_index)]
         self.rect = self.image.get_rect(bottomleft = self.hitbox.bottomleft)
-        print(f"center: {self.rect.center}")
 
     def update(self):
         self.get_input()

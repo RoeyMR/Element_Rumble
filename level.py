@@ -72,17 +72,18 @@ class CameraGroup(pygame.sprite.Group):
         # self.floor_rect = self.floor_surface.get_rect(topleft=(0, 0))
         #
     def update_camera_rect(self, target):  # moves the rect of the camera if the player goes out of it
-        if target.rect.left < self.camera_rect.left:
-            self.camera_rect.left = target.rect.left
+        if not target.attacking:
+            if target.rect.left < self.camera_rect.left:
+                self.camera_rect.left = target.rect.left
 
-        if target.rect.right > self.camera_rect.right:
-            self.camera_rect.right = target.rect.right
+            if target.rect.right > self.camera_rect.right:
+                self.camera_rect.right = target.rect.right
 
-        if target.rect.top < self.camera_rect.top:
-            self.camera_rect.top = target.rect.top
+            if target.rect.top < self.camera_rect.top:
+                self.camera_rect.top = target.rect.top
 
-        if target.rect.bottom > self.camera_rect.bottom:
-            self.camera_rect.bottom = target.rect.bottom
+            if target.rect.bottom > self.camera_rect.bottom:
+                self.camera_rect.bottom = target.rect.bottom
 
         self.offset.x = self.camera_rect.left - self.camera_borders["left"]
         self.offset.y = self.camera_rect.top - self.camera_borders["top"]
