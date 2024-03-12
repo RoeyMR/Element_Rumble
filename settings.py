@@ -18,3 +18,8 @@ TREES_IMAGES = {"0": _trees_dir + "bush_6.png", "1": _trees_dir + "grass_1.png",
                 "6": _trees_dir + "tree_2.png", "7": _trees_dir + "tree_3.png", "8": _trees_dir + "bush_1.png",
                 "9": _trees_dir + "bush_2.png", "10": _trees_dir + "bush_3.png", "11": _trees_dir + "bush_4.png",
                 "12": _trees_dir + "bush_5.png"}
+
+FIRE_WORM_DATA = {"health": 60, "speed": 5, "damage": 25, "attack radius": 200,
+                  "notice radius": 400, "attack cooldown": 200, "assets path": r".\enemy assets\Fire Worm\Sprites\Worm"}
+
+ENEMIES_DATA = {"fire worm": FIRE_WORM_DATA}

@@ -12,8 +12,8 @@ def mirror_image(image_name, old_dir, new_dir):
     # Save the mirrored image
     mirrored_image.save(os.path.join(new_dir, "left_" + image_name))
 
-dir = r".\Elementals_fire_knight_FREE_v1.1\png\fire_knight\right_take_hit"
-new_dir = r".\Elementals_fire_knight_FREE_v1.1\png\fire_knight\left_take_hit"
+dir = r"C:\Users\roeym\PycharmProjects\Element_Rumble\enemy assets\Fire Worm\Sprites\Worm\take_hit"
+new_dir = r"C:\Users\roeym\PycharmProjects\Element_Rumble\enemy assets\Fire Worm\Sprites\Worm\left_take_hit"
 os.mkdir(new_dir)
 for image_name in os.listdir(dir):
     mirror_image(image_name, dir, new_dir)

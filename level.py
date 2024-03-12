@@ -3,6 +3,7 @@ from settings import *
 from tile import Tile
 from player import Player
 from map_loading import *
+from enemy import Enemy
 
 
 class Level:
@@ -12,7 +13,10 @@ class Level:
         self.obstacles_sprites = pygame.sprite.Group()
         #self.create_map()
 
-        self.player = Player((64*5, 64*5), [self.visible_sprites], self.obstacles_sprites)
+        self.player = Player((64*5, 64*5), [self.visible_sprites], self.obstacles_sprites, r".\Elementals_fire_knight_FREE_v1.1\png\fire_knight")
+
+        Enemy("fire worm",(64*10, 64*10), [self.visible_sprites], self.obstacles_sprites, self.player)
+
         ground_layout = import_csv_layout(r".\map\layers\map._ground.csv")
         self.terrain_sprites = self.create_tile_group(ground_layout, "ground")
         props_layout = import_csv_layout(r".\map\layers\map._props.csv")
@@ -39,16 +43,6 @@ class Level:
                         sprite_group.add(Tile((x, y), [self.visible_sprites], surface=pygame.image.load(TREES_IMAGES[tile_id])))
 
         return sprite_group
-
-    def create_map(self):   # creates the game objects according to the map
-        for row_index, row in enumerate(WORLD_MAP):
-            for col_index, col in enumerate(row):
-                x = col_index * TILE_SIZE
-                y = row_index * TILE_SIZE
-                if col == "X":
-                    Tile((x, y), [self.visible_sprites, self.obstacles_sprites])
-                elif col == "P":
-                    self.player = Player((x, y), [self.visible_sprites], self.obstacles_sprites)
 
     def run(self):
         self.visible_sprites.draw_from_camera_angle(self.player, self.terrain_sprites)
