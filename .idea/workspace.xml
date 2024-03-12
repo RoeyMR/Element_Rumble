@@ -2,58 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a24e4da-afdd-44c7-9cc9-e4bb9402bc72" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/enemy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entity.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/death/death_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/death/death_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/death/death_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/death/death_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/death/death_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/death/death_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/death/death_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/death/death_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/idle/idle_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/idle/idle_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/idle/idle_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/idle/idle_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/idle/idle_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/idle/idle_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/idle/idle_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/idle/idle_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/idle/idle_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/take_hit/take_hit_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/take_hit/take_hit_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/take_hit/take_hit_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/walk/walk_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/walk/walk_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/walk/walk_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/walk/walk_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/walk/walk_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/walk/walk_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/walk/walk_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/walk/walk_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/walk/walk_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_mirroring.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_mirroring.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/level.py" beforeDir="false" afterPath="$PROJECT_DIR$/level.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/player.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy.py" beforeDir="false" afterPath="$PROJECT_DIR$/enemy.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

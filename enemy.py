@@ -34,8 +34,10 @@ class Enemy(Entity):
         distance = self.get_player_distance()
         if self.direction.x > 0:
             self.status = "right"
-        else:
+        elif self.direction.x < 0:
             self.status = "left"
+        else:
+            self.status = self.status.split("_")[0]
         if distance <= self.attack_radius:
             self.status += "_attack"
         elif distance <= self.notice_radius:
@@ -54,4 +56,3 @@ class Enemy(Entity):
         self.act()
         self.move()
         self.animate()
-        print(self.status)
