@@ -2,60 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a24e4da-afdd-44c7-9cc9-e4bb9402bc72" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/enemy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entity.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/COUPON.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/COUPON.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/Attack_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/Attack_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/Charge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/Dead.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/Fireball.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/Flame_jet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/Hurt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/Idle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/Jump.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/Run.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/Walk.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/walk/walk_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/walk/walk_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/walk/walk_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/walk/walk_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/walk/walk_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Fire vizard/walk/walk_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Font.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Licens.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Lightning Mage/Attack_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Lightning Mage/Attack_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Lightning Mage/Charge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Lightning Mage/Dead.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Lightning Mage/Hurt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Lightning Mage/Idle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Lightning Mage/Jump.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Lightning Mage/Light_ball.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Lightning Mage/Light_charge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Lightning Mage/Run.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Lightning Mage/Walk.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/PSD/Fire_Mage_Spritelist.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/PSD/Light_Mage_Spritelist.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/PSD/Wanderer_Magican_Spritelist.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Attack_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Attack_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Charge_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Charge_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Dead.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Hurt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Idle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Jump.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Magic_arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Magic_sphere.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Run.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/craftpix-net-431295-free-wizard-sprite-sheets-pixel-art/Wanderer Magican/Walk.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hisoka.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/attack/attack_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/death/death_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/death/death_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/death/death_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/death/death_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/death/death_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/death/death_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/death/death_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/death/death_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/idle/idle_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/idle/idle_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/idle/idle_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/idle/idle_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/idle/idle_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/idle/idle_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/idle/idle_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/idle/idle_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/idle/idle_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/take_hit/take_hit_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/take_hit/take_hit_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/take_hit/take_hit_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/walk/walk_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/walk/walk_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/walk/walk_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/walk/walk_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/walk/walk_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/walk/walk_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/walk/walk_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/walk/walk_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enemy assets/Fire Worm/Sprites/Worm/walk/walk_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_mirroring.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_mirroring.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/level.py" beforeDir="false" afterPath="$PROJECT_DIR$/level.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/naruto.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/player.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tile.py" beforeDir="false" afterPath="$PROJECT_DIR$/tile.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,8 +89,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="image_cropping" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Element_Rumble" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Program Files (x86)\Python38-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/image_cropping.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="image_mirroring" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Element_Rumble" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -104,6 +123,27 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/image_mirroring.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Element_Rumble" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Program Files (x86)\Python38-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -113,9 +153,62 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="player" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Element_Rumble" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/player.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="settings" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Element_Rumble" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/settings.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.image_cropping" />
+      <item itemvalue="Python.image_mirroring" />
+      <item itemvalue="Python.player" />
+      <item itemvalue="Python.settings" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.image_mirroring" />
+        <item itemvalue="Python.settings" />
+        <item itemvalue="Python.player" />
+        <item itemvalue="Python.image_cropping" />
       </list>
     </recent_temporary>
   </component>
@@ -137,10 +230,47 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/player.py</url>
+          <line>67</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/level.py</url>
+          <line>86</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/entity.py</url>
+          <line>67</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="animation_folder" language="Python" />
+        <watch expression="os.path.isdir(animation_folder)" language="Python" />
+        <watch expression="type(self)" language="Python" />
+        <watch expression="self.animations" language="Python" />
+        <watch expression="int(self.frame_index)" language="Python" />
+        <watch expression="animation" language="Python" />
+        <watch expression="self.frame_index" language="Python" />
+        <watch expression="len(animation)" language="Python" />
+        <watch expression="__py_debug_temp_var_44535893" />
+        <watch expression="self.frame_index" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
