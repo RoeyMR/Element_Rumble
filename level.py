@@ -13,7 +13,7 @@ class Level:
         self.obstacles_sprites = pygame.sprite.Group()
         #self.create_map()
 
-        self.player = Player((64*5, 64*5), [self.visible_sprites], self.obstacles_sprites, r".\Elementals_fire_knight_FREE_v1.1\png\fire_knight")
+        self.player = Player((64*5, 64*5), [self.visible_sprites], self.obstacles_sprites, r".\character")
 
         Enemy("fire worm",(64*10, 64*10), [self.visible_sprites], self.obstacles_sprites, self.player)
 
