@@ -68,9 +68,9 @@ class Entity(pygame.sprite.Sprite):
         self.frame_index = self.frame_index + self.animation_speed
         if self.frame_index >= len(animation):
             self.frame_index = 0
-            if self.attacking:
-                self.attacking = False
-                self.status = self.status.split("_")[0] + "_idle"
+            # if self.attacking:
+            #     self.attacking = False
+            #     self.status = self.status.split("_")[0] + "_idle"
 
         self.image = animation[int(self.frame_index)]
         self.rect = self.image.get_rect(bottomleft = self.hitbox.bottomleft)
