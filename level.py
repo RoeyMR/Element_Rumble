@@ -4,6 +4,7 @@ from tile import Tile
 from player import Player
 from map_loading import *
 from enemy import Enemy
+from weapon import Weapon
 
 
 class Level:
@@ -11,11 +12,16 @@ class Level:
         self.display_surface = pygame.display.get_surface()
         self.visible_sprites = CameraGroup()
         self.obstacles_sprites = pygame.sprite.Group()
-        #self.create_map()
 
-        self.player = Player((64*5, 64*5), [self.visible_sprites], self.obstacles_sprites, r".\character")
+        self.attack_sprites = pygame.sprite.Group()
+        self.attackable_sprites = pygame.sprite.Group()
 
-        Enemy("fire worm",(64*10, 64*10), [self.visible_sprites], self.obstacles_sprites, self.player)
+        self.player = Player((64*5, 64*5), [self.visible_sprites], self.obstacles_sprites, r".\character", self.create_attack)
+        Weapon(self.player, [self.visible_sprites], r"C:\Users\roeym\PycharmProjects\Element_Rumble\weapons\sword.png")
+
+        Enemy("fire worm",(64*10, 64*10), [self.visible_sprites, self.attackable_sprites], self.obstacles_sprites, self.player)
+
+
 
         ground_layout = import_csv_layout(r".\map\layers\map._ground.csv")
         self.terrain_sprites = self.create_tile_group(ground_layout, "ground")
@@ -44,9 +50,21 @@ class Level:
 
         return sprite_group
 
+    def player_attack_logic(self):
+        if self.attack_sprites:
+            for attack_sprite in self.attack_sprites:
+                collided_sprites = pygame.sprite.spritecollide(attack_sprite, self.attackable_sprites, True)
+                if collided_sprites:
+                    for target_sprite in collided_sprites:
+                        target_sprite.kill()
+
+    def create_attack(self):
+        pass
+
     def run(self):
         self.visible_sprites.draw_from_camera_angle(self.player, self.terrain_sprites)
         self.visible_sprites.update()
+        self.player_attack_logic()
 
 
 class CameraGroup(pygame.sprite.Group):
