@@ -7,7 +7,7 @@ class Entity(pygame.sprite.Sprite):
     def __init__(self, pos, groups, obstacle_sprites, assets_path):
         super().__init__(groups)
         self.image = pygame.image.load(
-            r".\Elementals_fire_knight_FREE_v1.1\png\fire_knight\right_idle\right_idle_1.png").convert_alpha()
+            r".\character\front\front_1.png").convert_alpha()
         self.image = pygame.transform.scale_by(self.image, (PLAYER_SPRITE_SCALE, PLAYER_SPRITE_SCALE))
         self.rect = self.image.get_rect(topleft=pos)
         self.direction = pygame.math.Vector2()
@@ -22,14 +22,13 @@ class Entity(pygame.sprite.Sprite):
 
         # animation attributes
         self.animations = {}
-        self.import_player_assets(assets_path)
+        self.import_assets(assets_path)
         self.status = "right_idle"  # the status of the player (the animation that is presented)
         self.frame_index = 0
         self.animation_speed = 0.3
         self.status = "right_idle"    # the status of the entity (the animation that is presented)
 
-
-    def import_player_assets(self, assets_path):
+    def import_assets(self, assets_path):
         for animation_folder in os.listdir(assets_path):
             folder_name = os.path.join(assets_path, animation_folder)
             if os.path.isdir(folder_name):
@@ -69,9 +68,9 @@ class Entity(pygame.sprite.Sprite):
         self.frame_index = self.frame_index + self.animation_speed
         if self.frame_index >= len(animation):
             self.frame_index = 0
-            if self.attacking:
-                self.attacking = False
-                self.status = self.status.split("_")[0] + "_idle"
+            # if self.attacking:
+            #     self.attacking = False
+            #     self.status = self.status.split("_")[0] + "_idle"
 
         self.image = animation[int(self.frame_index)]
         self.rect = self.image.get_rect(bottomleft = self.hitbox.bottomleft)

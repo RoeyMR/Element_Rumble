@@ -1,7 +1,22 @@
 WIDTH, HEIGHT = 1280, 720
 FPS = 60
 TILE_SIZE = 64
-PLAYER_SPRITE_SCALE = 1.25
+
+# Player settings
+PLAYER_SPRITE_SCALE = 2
+
+DIRECTIONS = {"left": (-1, 0), "right": (1, 0), "front": (0, 1), "back": (0,-1)}
+
+DASH_SPEED = 30
+NORMAL_SPEED = 10
+
+DASH_DURATION = 100
+ATTACK_DURATION = 600
+
+# cooldowns
+ATTACK_COOLDOWN = 400
+DASH_COOLDOWN = 600
+# ---------------------
 
 _props_dir = r".\map\props\\"
 PROPS_IMAGES = {"0": _props_dir + "open_door.png", "1": _props_dir + "pot.png", "2": _props_dir + "pot_2.png",

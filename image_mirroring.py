@@ -10,12 +10,10 @@ def mirror_image(image_name, old_dir, new_dir):
     mirrored_image = image.transpose(Image.FLIP_LEFT_RIGHT)
 
     # Save the mirrored image
-    mirrored_image.save(os.path.join(new_dir, "left_" + image_name))
+    mirrored_image.save(os.path.join(new_dir, image_name.replace("right", "left")))
 
-dir = r"C:\Users\roeym\PycharmProjects\Element_Rumble\enemy assets\Fire Worm\Sprites\Worm\take_hit"
-new_dir = r"C:\Users\roeym\PycharmProjects\Element_Rumble\enemy assets\Fire Worm\Sprites\Worm\left_take_hit"
+dir = r"C:\Users\roeym\PycharmProjects\Element_Rumble\character\right"
+new_dir = r"C:\Users\roeym\PycharmProjects\Element_Rumble\character\left"
 os.mkdir(new_dir)
 for image_name in os.listdir(dir):
     mirror_image(image_name, dir, new_dir)
-    os.rename(os.path.join(dir, image_name), os.path.join(dir, "right_" + image_name))
-
