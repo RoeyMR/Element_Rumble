@@ -5,6 +5,7 @@ from player import Player
 from map_loading import *
 from enemy import Enemy
 from weapon import Weapon
+from entity import Entity
 
 
 class Level:
@@ -17,7 +18,7 @@ class Level:
         self.attackable_sprites = pygame.sprite.Group()
 
         self.player = Player((64*5, 64*5), [self.visible_sprites], self.obstacles_sprites, r".\character", self.create_attack)
-        Weapon(self.player, [self.visible_sprites], r"C:\Users\roeym\PycharmProjects\Element_Rumble\weapons\sword.png")
+        Weapon(self.player, [self.visible_sprites, self.attack_sprites], r"C:\Users\roeym\PycharmProjects\Element_Rumble\weapons\sword.png")
 
         Enemy("fire worm",(64*10, 64*10), [self.visible_sprites, self.attackable_sprites], self.obstacles_sprites, self.player)
 
@@ -53,10 +54,12 @@ class Level:
     def player_attack_logic(self):
         if self.attack_sprites:
             for attack_sprite in self.attack_sprites:
-                collided_sprites = pygame.sprite.spritecollide(attack_sprite, self.attackable_sprites, True)
+                collided_sprites = pygame.sprite.spritecollide(attack_sprite, self.attackable_sprites, False)
                 if collided_sprites:
                     for target_sprite in collided_sprites:
-                        target_sprite.kill()
+                        if isinstance(target_sprite, Entity):
+                            target_sprite.get_damage(attack_sprite)
+                            print(f"target sprite health: {target_sprite.health}")
 
     def create_attack(self):
         pass

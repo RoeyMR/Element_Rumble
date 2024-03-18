@@ -14,6 +14,7 @@ class Enemy(Entity):
         self.speed = enemy_data["speed"]
         self.attack_cooldown = enemy_data["attack cooldown"]
         self.player = player
+        self.health = enemy_data["health"]
 
     def get_player_distance(self):
         player_vector = pygame.math.Vector2(self.player.rect.center)
@@ -32,18 +33,25 @@ class Enemy(Entity):
 
     def get_status(self):
         distance = self.get_player_distance()
+        status = ""
         if self.direction.x > 0:
-            self.status = "right"
+            status = "right"
         elif self.direction.x < 0:
-            self.status = "left"
+            status = "left"
         else:
-            self.status = self.status.split("_")[0]
+            status = self.status.split("_")[0]
+        if self.health <= 0:
+            self.status = status + "_death"
+            return
         if distance <= self.attack_radius:
-            self.status += "_attack"
+            status += "_attack"
+            if "attack" not in self.status:
+                self.attack_time = pygame.time.get_ticks()
         elif distance <= self.notice_radius:
-            self.status += "_move"
+            status += "_move"
         else:
-            self.status += "_idle"
+            status += "_idle"
+        self.status = status
 
     def act(self):
         if self.status.endswith("move"):
@@ -54,5 +62,8 @@ class Enemy(Entity):
     def update(self):
         self.get_status()
         self.act()
+        self.check_durations()
         self.move()
         self.animate()
+        if "death" in self.status and  self.frame_index + self.animation_speed >= len(self.animations[self.status]):
+            self.kill()

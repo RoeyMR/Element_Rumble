@@ -5,6 +5,8 @@ class Weapon(pygame.sprite.Sprite):
     def __init__(self, player, groups, image_path):
         super().__init__(groups)
 
+        self.damage = 10
+
         self.player = player
         direction = self.player.status.split("_")[0]
         self.image = pygame.image.load(image_path)

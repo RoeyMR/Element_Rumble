@@ -12,10 +12,12 @@ class Entity(pygame.sprite.Sprite):
         self.rect = self.image.get_rect(topleft=pos)
         self.direction = pygame.math.Vector2()
         self.speed = 10
+        self.health = 100
 
         self.attacking = False
         self.attack_cooldown = 400
         self.attack_time = None
+        self.attack_duration = 400
 
         self.hitbox = self.rect.inflate(0, -20)
         self.obstacle_sprites = obstacle_sprites
@@ -28,6 +30,11 @@ class Entity(pygame.sprite.Sprite):
         self.animation_speed = 0.3
         self.status = "right_idle"    # the status of the entity (the animation that is presented)
 
+        # makes sure the damage of the attack is reduced only once for each attack
+        self.vulnerable = True
+        self.hit_time = None
+        self.invincibility_duration = 400
+
     def import_assets(self, assets_path):
         for animation_folder in os.listdir(assets_path):
             folder_name = os.path.join(assets_path, animation_folder)
@@ -37,6 +44,12 @@ class Entity(pygame.sprite.Sprite):
                     self.animations[animation_folder].append(
                         pygame.transform.scale_by(pygame.image.load(os.path.join(folder_name, filename)).convert_alpha(),
                                                   (PLAYER_SPRITE_SCALE, PLAYER_SPRITE_SCALE)))
+
+    def get_damage(self, weapon):
+        if self.vulnerable and weapon.player.attacking:
+            self.health -= weapon.damage
+            self.hit_time = pygame.time.get_ticks()
+            self.vulnerable = False
 
     def move(self):
         if self.direction.magnitude() != 0:
@@ -62,6 +75,21 @@ class Entity(pygame.sprite.Sprite):
                         self.hitbox.top = sprite.hitbox.bottom
                     if self.direction.y > 0:  # moving down
                         self.hitbox.bottom = sprite.hitbox.top
+
+    def check_durations(self):  # checks the durations of actions in the game and disables them if necessary
+        current_time = pygame.time.get_ticks()
+
+        # attack duration
+        if "attack" in self.status:
+            self.last_attack_frame = self.frame_index
+            if current_time - self.attack_time >= self.attack_duration:
+                self.attacking = False
+                if "_idle" not in self.status:
+                    self.status = self.status.replace("attack", "idle")
+
+        # vulnerability duration
+        if not self.vulnerable and current_time - self.hit_time >= self.invincibility_duration:
+            self.vulnerable = True
 
     def animate(self):
         animation = self.animations[self.status]

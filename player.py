@@ -15,7 +15,6 @@ class Player(Entity):
         self.create_attack = create_attack
         self.attacking = False
         self.attack_cooldown = ATTACK_COOLDOWN
-        self.attack_time = None
         self.attack_duration = ATTACK_DURATION
         self.last_attack_frame = 0  # enables to display only part of the attack animation (so the attack is quick)
 
@@ -130,17 +129,11 @@ class Player(Entity):
                 self.status += "_idle"
 
     def check_durations(self):  # checks the durations of actions in the game and disables them if necessary
+        super().check_durations()
+
         current_time = pygame.time.get_ticks()
 
-        # attack cooldown
-        if "attack" in self.status:
-            self.last_attack_frame = self.frame_index
-            if current_time - self.attack_time >= self.attack_duration:
-                self.attacking = False
-                if "_idle" not in self.status:
-                    self.status = self.status.replace("attack", "idle")
-
-        # dash cooldown
+        # dash duration
         if "dash" in self.status:
             if current_time - self.dash_time >= self.dash_duration:
                 #self.status = self.status.replace("dash", "idle")
