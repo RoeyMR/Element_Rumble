@@ -1,11 +1,15 @@
 import pygame
 from settings import *
 import os
+from weapon import Projectile
 
 
 class Entity(pygame.sprite.Sprite):
-    def __init__(self, pos, groups, obstacle_sprites, assets_path):
+    def __init__(self, pos, groups, obstacle_sprites, assets_path, image_scale=1):
         super().__init__(groups)
+
+        # image attributes
+        self.image_scale = image_scale
         self.image = pygame.image.load(
             r".\character\front\front_1.png").convert_alpha()
         self.image = pygame.transform.scale_by(self.image, (PLAYER_SPRITE_SCALE, PLAYER_SPRITE_SCALE))
@@ -28,12 +32,13 @@ class Entity(pygame.sprite.Sprite):
         self.status = "right_idle"  # the status of the player (the animation that is presented)
         self.frame_index = 0
         self.animation_speed = 0.3
-        self.status = "right_idle"    # the status of the entity (the animation that is presented)
 
         # makes sure the damage of the attack is reduced only once for each attack
         self.vulnerable = True
         self.hit_time = None
         self.invincibility_duration = 400
+
+        self.resistant_against = []  # the objects that the entity is resistant against (i.e. it's own weapons)
 
     def import_assets(self, assets_path):
         for animation_folder in os.listdir(assets_path):
@@ -43,13 +48,16 @@ class Entity(pygame.sprite.Sprite):
                 for filename in os.listdir(folder_name):
                     self.animations[animation_folder].append(
                         pygame.transform.scale_by(pygame.image.load(os.path.join(folder_name, filename)).convert_alpha(),
-                                                  (PLAYER_SPRITE_SCALE, PLAYER_SPRITE_SCALE)))
+                                                  (self.image_scale, self.image_scale)))
 
     def get_damage(self, weapon):
-        if self.vulnerable and weapon.player.attacking:
+        if self.vulnerable and weapon not in self.resistant_against:
             self.health -= weapon.damage
             self.hit_time = pygame.time.get_ticks()
             self.vulnerable = False
+
+            if isinstance(weapon, Projectile):
+                weapon.destroy()
 
     def move(self):
         if self.direction.magnitude() != 0:
@@ -93,13 +101,14 @@ class Entity(pygame.sprite.Sprite):
 
     def animate(self):
         animation = self.animations[self.status]
-        self.frame_index = self.frame_index + self.animation_speed
+        self.frame_index += self.animation_speed
         if self.frame_index >= len(animation):
             self.frame_index = 0
-            # if self.attacking:
-            #     self.attacking = False
-            #     self.status = self.status.split("_")[0] + "_idle"
 
         self.image = animation[int(self.frame_index)]
         self.rect = self.image.get_rect(bottomleft = self.hitbox.bottomleft)
+
+    def update(self):
+        self.animate()
+        self.move()
 

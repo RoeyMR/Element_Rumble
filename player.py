@@ -5,14 +5,13 @@ from entity import Entity
 
 
 class Player(Entity):
-    def __init__(self, pos, groups, obstacle_sprites, assets_path, create_attack):
-        super().__init__(pos, groups, obstacle_sprites, assets_path)
+    def __init__(self, pos, groups, obstacle_sprites, assets_path):
+        super().__init__(pos, groups, obstacle_sprites, assets_path, image_scale=PLAYER_SPRITE_SCALE)
         self.image = pygame.image.load(r".\character\front\front_1.png").convert_alpha()
         self.image = pygame.transform.scale_by(self.image, (PLAYER_SPRITE_SCALE, PLAYER_SPRITE_SCALE))
         self.rect = self.image.get_rect(topleft = pos)
         self.speed = NORMAL_SPEED
 
-        self.create_attack = create_attack
         self.attacking = False
         self.attack_cooldown = ATTACK_COOLDOWN
         self.attack_duration = ATTACK_DURATION
@@ -80,7 +79,6 @@ class Player(Entity):
             self.direction.x, self.direction.y = (0, 0)
             if "_attack" not in self.status:
                 self.frame_index = self.last_attack_frame
-                self.create_attack()
                 if "idle" in self.status:
                     self.status = self.status.replace("idle", "attack")
                 else:

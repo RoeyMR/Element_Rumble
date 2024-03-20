@@ -3,8 +3,8 @@ from settings import *
 from tile import Tile
 from player import Player
 from map_loading import *
-from enemy import Enemy
-from weapon import Weapon
+from enemy import Enemy, Shooting_Enemy
+from weapon import Held_Weapon, Projectile
 from entity import Entity
 
 
@@ -17,10 +17,16 @@ class Level:
         self.attack_sprites = pygame.sprite.Group()
         self.attackable_sprites = pygame.sprite.Group()
 
-        self.player = Player((64*5, 64*5), [self.visible_sprites], self.obstacles_sprites, r".\character", self.create_attack)
-        Weapon(self.player, [self.visible_sprites, self.attack_sprites], r"C:\Users\roeym\PycharmProjects\Element_Rumble\weapons\sword.png")
+        self.player = Player((64*5, 64*5), [self.visible_sprites, self.attackable_sprites], self.obstacles_sprites, r".\character")
+        self.player.resistant_against.append(Held_Weapon(self.player, [self.visible_sprites, self.attack_sprites], r".\weapons\sword.png",
+               self.visible_sprites, self.attack_sprites, 10, effect_path=r".\effects\slash_effect"))
 
-        Enemy("fire worm",(64*10, 64*10), [self.visible_sprites, self.attackable_sprites], self.obstacles_sprites, self.player)
+        Shooting_Enemy("fire worm",(64*10, 64*10), [self.visible_sprites, self.attackable_sprites], self.obstacles_sprites,
+                       self.player, r".\enemy assets\Fire Worm\Sprites\Fire Ball\move", self.attack_sprites, image_scale=2)
+        Shooting_Enemy("fire worm", (64 * 5, 64 * 10), [self.visible_sprites, self.attackable_sprites],
+                       self.obstacles_sprites,
+                       self.player, r".\enemy assets\Fire Worm\Sprites\Fire Ball\move", self.attack_sprites,
+                       image_scale=2)
 
 
 
@@ -60,9 +66,6 @@ class Level:
                         if isinstance(target_sprite, Entity):
                             target_sprite.get_damage(attack_sprite)
                             print(f"target sprite health: {target_sprite.health}")
-
-    def create_attack(self):
-        pass
 
     def run(self):
         self.visible_sprites.draw_from_camera_angle(self.player, self.terrain_sprites)

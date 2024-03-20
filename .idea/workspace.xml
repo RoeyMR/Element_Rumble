@@ -197,18 +197,33 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/player.py</url>
-          <line>77</line>
+          <line>76</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/level.py</url>
-          <line>107</line>
+          <line>106</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/player.py</url>
-          <line>90</line>
+          <line>88</line>
           <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/weapon.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/weapon.py</url>
+          <line>171</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/entity.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -216,6 +231,24 @@
       <configuration name="PythonConfigurationType">
         <watch expression="self.frame_index" language="Python" />
         <watch expression="self.last_attack_frame" language="Python" />
+        <watch expression="self.effect.groups()" language="Python" />
+        <watch expression="self.groups().append(self.attack_sprite_group)" language="Python" />
+        <watch expression="self.groups()" language="Python" />
+        <watch expression="self.groups() + self.attack_sprite_group" language="Python" />
+        <watch expression="self.attack_sprite_group" language="Python" />
+        <watch expression="self.groups() + [self.attack_sprite_group]" language="Python" />
+        <watch expression="self.rect" language="Python" />
+        <watch expression="self.rect" language="Python" />
+        <watch expression="self.image" language="Python" />
+        <watch expression="self.direction" language="Python" />
+        <watch expression="self.direction.x" language="Python" />
+        <watch expression="self.frame_index" language="Python" />
+        <watch expression="len(self.effect_animation)" language="Python" />
+        <watch expression="weapon" language="Python" />
+        <watch expression="self.vulnerable" language="Python" />
+        <watch expression="self.resistant_against" language="Python" />
+        <watch expression="__py_debug_temp_var_2013709782" />
+        <watch expression="weapon not in self.resistant_against" language="Python" />
       </configuration>
     </watches-manager>
   </component>

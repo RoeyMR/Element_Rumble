@@ -1,12 +1,13 @@
 import pygame
 from entity import Entity
 from settings import *
+from weapon import Projectile
 
 
 class Enemy(Entity):
-    def __init__(self, enemy_name, pos, groups, obstacle_sprites, player):
+    def __init__(self, enemy_name, pos, groups, obstacle_sprites, player, image_scale=1):
         enemy_data = ENEMIES_DATA[enemy_name]
-        super().__init__(pos, groups, obstacle_sprites, enemy_data["assets path"])
+        super().__init__(pos, groups, obstacle_sprites, enemy_data["assets path"], image_scale=image_scale)
         self.health = enemy_data["health"]
         self.damage = enemy_data["damage"]
         self.notice_radius = enemy_data["notice radius"]
@@ -67,3 +68,22 @@ class Enemy(Entity):
         self.animate()
         if "death" in self.status and  self.frame_index + self.animation_speed >= len(self.animations[self.status]):
             self.kill()
+
+
+class Shooting_Enemy(Enemy):
+    def __init__(self, enemy_name, pos, groups, obstacle_sprites, player, projectile_path, attack_sprite_group,
+                 projectile_explosion_path = "", image_scale=1):
+        super().__init__(enemy_name, pos, groups, obstacle_sprites, player, image_scale=image_scale)
+
+        self.projectile_path = projectile_path
+        self.projectile_explosion_path = projectile_explosion_path
+        self.attack_sprite_group = attack_sprite_group
+
+    def act(self):
+        super().act()
+
+        if "attack" in self.status and self.frame_index == 0:
+            self.resistant_against.append(Projectile(self.player, self.groups() + [self.attack_sprite_group], r".\enemy assets\Fire Worm\Sprites\Fire Ball\move\move_1.png",
+                   self.groups()[0], 15, 7, self.obstacle_sprites, self.get_player_direction(), effect_path=r".\enemy assets\Fire Worm\Sprites\Fire Ball\move",
+                       pos = self.rect.center, explosion_path=r".\enemy assets\Fire Worm\Sprites\Fire Ball\explosion",
+                                          image_scale=self.image_scale))
